@@ -1,11 +1,24 @@
 {
   "blurb": "Learn about comparisons by implementing some Black Jack judging rules.",
-  "authors": ["Ticktakto", "Yabby1997", "limm-jk", "OMEGA-Y", "wnstj2007", "pranasziaukas", "bethanyG"],
-  "icon": "poker",
-  "contributors": ["PaulT89"],
+  "authors": [
+    "mdave16"
+  ],
+  "contributors": [
+    "antblah",
+    "blairnangle",
+    "jjcohen-rvu",
+    "moos1089"
+  ],
   "files": {
-    "solution": ["black_jack.py"],
-    "test": ["black_jack_test.py"],
-    "exemplar": [".meta/exemplar.py"]
-  }
+    "solution": [
+      "src/black_jack.clj"
+    ],
+    "test": [
+      "test/black_jack_test.clj"
+    ],
+    "example": [
+      ".meta/src/example.clj"
+    ]
+  },
+  "source": "London Clojurians, USwitch Clojure Dojo"
 }
