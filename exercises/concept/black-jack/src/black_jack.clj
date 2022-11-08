@@ -1,4 +1,4 @@
-(ns cars-assemble)
+(ns black-jack)
 
 (defn production-rate
   "Returns the assembly line's production rate per hour,

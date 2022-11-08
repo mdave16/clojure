@@ -1,4 +1,4 @@
-(ns cars-assemble)
+(ns black-jack)
 
 (def default-rate 221)
 
