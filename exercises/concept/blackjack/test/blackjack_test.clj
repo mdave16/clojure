@@ -1,6 +1,6 @@
-(ns black-jack-test
+(ns blackjack-test
   (:require [clojure.test :refer [deftest testing is]]
-            cars-assemble))
+            blackjack))
 
 ; copied from https://exercism.org/tracks/python/exercises/black-jack
 ; functions to test:
