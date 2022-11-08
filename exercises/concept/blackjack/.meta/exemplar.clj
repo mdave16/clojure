@@ -1,21 +1,14 @@
 (ns black-jack)
 
-(def default-rate 221)
+;; ParseCard returns the integer value of a card following blackjack ruleset.
+(defn parse-card [card]
+  {"ace" 11
+   "two" 2
+   "three" 3
+   "joker" 0}
+  )
 
-(defn success-rate [speed]
-  (cond (= speed 10) 0.77
-        (= speed 9) 0.8
-        (>= speed 5) 0.9
-        :else 1.0))
 
-(defn production-rate
-  "Returns the assembly line's production rate per hour,
-   taking into account its success rate"
-  [speed]
-  (* (* default-rate speed)
-     (success-rate speed)))
-
-(defn working-items
-  "Calculates how many working cars are produced per minute"
-  [speed]
-  (int (quot (production-rate speed) 60)))
+;; FirstTurn returns the decision for the first turn, given two cards of the
+;; player and one card of the dealer.
+(defn func FirstTurn [card1 card2 dealerCard string])
