@@ -3,7 +3,6 @@
 (defn parse-card
   "returns the value of a card"
   [card]
-  ;; e.g. (parse-card "ace") => 11
   )
 
 (defn first-turn
