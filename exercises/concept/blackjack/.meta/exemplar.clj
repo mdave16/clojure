@@ -1,6 +1,7 @@
 (ns black-jack)
 
 ;; ParseCard returns the integer value of a card following blackjack ruleset.
+;; card names are given in english lowercase
 (defn parse-card [card]
   ({"ace"   11
     "two"   2
