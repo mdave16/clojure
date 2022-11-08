@@ -1,12 +1,12 @@
 (ns blackjack)
 
-(defn production-rate
-  "Returns the assembly line's production rate per hour,
-   taking into account its success rate"
-  [speed]
+(defn parse-card
+  "returns the value of a card"
+  [card]
+  ;; e.g. (parse-card "ace") => 11
   )
 
-(defn working-items
-  "Calculates how many working cars are produced per minute"
-  [speed]
+(defn first-turn
+  "returns the decision for the first turn, given two cards of the player and one card of the dealer"
+  [player-card1 player-card2 dealer-card]
   )

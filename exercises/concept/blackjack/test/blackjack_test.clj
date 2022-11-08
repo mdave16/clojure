@@ -4,31 +4,31 @@
 
 ; copied from https://github.com/exercism/go/blob/main/exercises/concept/blackjack/blackjack_test.go
 
-(deftest test-value-of-card
-  (is (= 2 (black-jack/value-of-card "2")))
-  (is (= 5 (black-jack/value-of-card "5")))
-  (is (= 8 (black-jack/value-of-card "8")))
-  (is (= 1 (black-jack/value-of-card "A")))
-  (is (= 10 (black-jack/value-of-card "10")))
-  (is (= 10 (black-jack/value-of-card "J")))
-  (is (= 10 (black-jack/value-of-card "Q")))
-  (is (= 10 (black-jack/value-of-card "K"))))
+(deftest test-pase-card
+  (is (= 2 (blackjack/pase-card "2")))
+  (is (= 5 (blackjack/pase-card "5")))
+  (is (= 8 (blackjack/pase-card "8")))
+  (is (= 11 (blackjack/pase-card "A")))
+  (is (= 10 (blackjack/pase-card "10")))
+  (is (= 10 (blackjack/pase-card "J")))
+  (is (= 10 (blackjack/pase-card "Q")))
+  (is (= 10 (blackjack/pase-card "K"))))
 
 (deftest test-first-hand
-  (is (= "P" (black-jack/first-turn ("A" "A" "A"))))
-  (is (= "S" (black-jack/first-turn ("J" "J" "A"))))
-  (is (= "S" (black-jack/first-turn ("K" "K" "A"))))
-  (is (= "H" (black-jack/first-turn ("2" "2" "A"))))
-  (is (= "H" (black-jack/first-turn ("5" "5" "A"))))
-  (is (= "S" (black-jack/first-turn ("A" "J" "A"))))
-  (is (= "S" (black-jack/first-turn ("K" "A" "Q"))))
-  (is (= "S" (black-jack/first-turn ("K" "A" "Q"))))
-  (is (= "W" (black-jack/first-turn ("A" "10" "5"))))
-  (is (= "W" (black-jack/first-turn ("A" "K" "9"))))
-  (is (= "S" (black-jack/first-turn ("10" "K" "A"))))
-  (is (= "S" (black-jack/first-turn ("10" "9" "A"))))
-  (is (= "S" (black-jack/first-turn ("10" "8" "A"))))
-  (is (= "S" (black-jack/first-turn ("7" "K" "A")))))
+  (is (= "P" (blackjack/first-turn ("A" "A" "A"))))
+  (is (= "S" (blackjack/first-turn ("J" "J" "A"))))
+  (is (= "S" (blackjack/first-turn ("K" "K" "A"))))
+  (is (= "H" (blackjack/first-turn ("2" "2" "A"))))
+  (is (= "H" (blackjack/first-turn ("5" "5" "A"))))
+  (is (= "S" (blackjack/first-turn ("A" "J" "A"))))
+  (is (= "S" (blackjack/first-turn ("K" "A" "Q"))))
+  (is (= "S" (blackjack/first-turn ("K" "A" "Q"))))
+  (is (= "W" (blackjack/first-turn ("A" "10" "5"))))
+  (is (= "W" (blackjack/first-turn ("A" "K" "9"))))
+  (is (= "S" (blackjack/first-turn ("10" "K" "A"))))
+  (is (= "S" (blackjack/first-turn ("10" "9" "A"))))
+  (is (= "S" (blackjack/first-turn ("10" "8" "A"))))
+  (is (= "S" (blackjack/first-turn ("7" "K" "A")))))
 
   ;{
   ; name:   "score of 16 with six for dealer",
