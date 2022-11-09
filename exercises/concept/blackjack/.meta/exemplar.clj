@@ -20,7 +20,7 @@
 
 ;; FirstTurn returns the decision for the first turn, given two cards of the
 ;; player and one card of the dealer.
-(defn func FirstTurn [card1 card2 dealer-card]
+(defn FirstTurn [card1 card2 dealer-card]
   (let [hand-score (+ (parse-card card1) (parse-card card2))
         dealer-score (parse-card dealer-card)]
     (cond
